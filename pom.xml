@@ -56,12 +56,6 @@
 		  <url>scm:git:https://github.com/milu125000/milu125000.github.io.git</url>
 		</site>
 	</distributionManagement>
-<<<<<<< HEAD
-
-	
-=======
->>>>>>> 5656db25547d071d745e00d8e83ad695aaa78fc8
-
 
 	<build>
 		<plugins>
@@ -92,17 +86,6 @@
 				  <scmBranch>gh-pages</scmBranch>
 				</configuration>
 			  </plugin>
-
-<<<<<<< HEAD
-=======
-			  <plugin>
-				<artifactId>maven-site-plugin</artifactId>
-				<configuration>
-				  <locales>en,fr</locales>
-				</configuration>
-			  </plugin>
-
->>>>>>> 5656db25547d071d745e00d8e83ad695aaa78fc8
 		</plugins>
 		
 	</build>
