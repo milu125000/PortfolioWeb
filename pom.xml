@@ -5,17 +5,18 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.7</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.4.0</version>
 	</parent>
 	<groupId>com.milagros</groupId>
 	<artifactId>PortfolioWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PortfolioWeb</name>
+	<!-- <url>https://github.com/milu125000.github.io</url> -->
 	<description>SpringBoot Portfolio</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -25,22 +26,29 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.4.0</version>
+		</dependency>	
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>6.0.0.Final</version>
 			<type>pom</type>
 		</dependency>
-
+	
 	</dependencies>
 
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	
 	<distributionManagement>
 		<site>
@@ -48,8 +56,11 @@
 		  <url>scm:git:https://github.com/milu125000/milu125000.github.io.git</url>
 		</site>
 	</distributionManagement>
+<<<<<<< HEAD
 
 	
+=======
+>>>>>>> 5656db25547d071d745e00d8e83ad695aaa78fc8
 
 
 	<build>
@@ -82,7 +93,18 @@
 				</configuration>
 			  </plugin>
 
+<<<<<<< HEAD
+=======
+			  <plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+				  <locales>en,fr</locales>
+				</configuration>
+			  </plugin>
+
+>>>>>>> 5656db25547d071d745e00d8e83ad695aaa78fc8
 		</plugins>
+		
 	</build>
 
 	
