@@ -42,14 +42,46 @@
 	</dependencies>
 
 	
+	<distributionManagement>
+		<site>
+		  <id>github</id>
+		  <url>scm:git:https://github.com/milu125000/milu125000.github.io.git</url>
+		</site>
+	</distributionManagement>
+
+	
 
 
 	<build>
 		<plugins>
+			
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- maven pages -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			  </plugin>
+			  <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>3.0.0</version>
+			  </plugin>
+
+			<!-- maven 4 git -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-publish-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+				  <scmBranch>gh-pages</scmBranch>
+				</configuration>
+			  </plugin>
+
 		</plugins>
 	</build>
 
