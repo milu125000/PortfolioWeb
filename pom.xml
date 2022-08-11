@@ -5,22 +5,19 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.2</version>
+		<version>2.4.0</version>
 	</parent>
 	<groupId>com.milagros</groupId>
 	<artifactId>PortfolioWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PortfolioWeb</name>
+	<url>https://milu125000.github.io</url>
 	<description>SpringBoot Portfolio</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>11</java.version>
 	</properties>
+
 	<dependencies>
-		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>2.4.0</version>
-        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -29,22 +26,30 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.4.0</version>
+		</dependency>	
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>6.0.0.Final</version>
 			<type>pom</type>
 		</dependency>
-
+	
 	</dependencies>
 
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	
 	<distributionManagement>
 		<site>
 		  <id>github</id>
@@ -54,31 +59,25 @@
 
 
 	<build>
-		
 		<plugins>
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.1.0</version>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- maven pages -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.7.1</version>
-			</plugin>
-	
-			<plugin>
+			  </plugin>
+			  <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<configuration>
-					<scmBranch>gh-pages</scmBranch>
-				</configuration>
 				<version>3.0.0</version>
-			</plugin>
+			  </plugin>
 
+			<!-- maven 4 git -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-scm-publish-plugin</artifactId>
@@ -88,7 +87,6 @@
 				</configuration>
 			  </plugin>
 
-			
 		</plugins>
 		
 	</build>
