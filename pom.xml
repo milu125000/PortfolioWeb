@@ -5,8 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.7</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.7.2</version>
 	</parent>
 	<groupId>com.milagros</groupId>
 	<artifactId>PortfolioWeb</artifactId>
@@ -14,9 +13,14 @@
 	<name>PortfolioWeb</name>
 	<description>SpringBoot Portfolio</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>2.4.0</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -41,16 +45,52 @@
 
 	</dependencies>
 
-	
+	<distributionManagement>
+		<site>
+		  <id>github</id>
+		  <url>scm:git:git@github.com:milu125000.github.io.git</url>
+		</site>
+	</distributionManagement>
 
 
 	<build>
+		
 		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.7.1</version>
+			</plugin>
+	
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<configuration>
+					<scmBranch>gh-pages</scmBranch>
+				</configuration>
+				<version>3.0.0</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-publish-plugin</artifactId>
+				<version>3.0.0</version>
+				<configuration>
+				  <scmBranch>gh-pages</scmBranch>
+				</configuration>
+			  </plugin>
+
+			
 		</plugins>
+		
 	</build>
 
 	
