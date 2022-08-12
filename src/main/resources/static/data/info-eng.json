@@ -1,9 +1,35 @@
 
 {
+    "titles":{
+        
+        "portfolio" : "studies",
+        
+        "skills" : "skills",
+
+        "projects": "projects"
+    },
+
     "introduction": {
+
         "initialDesc": "Hi! I am a System Student, since 2019, and my objective is to get a Bachelor's Degree!. Until now, I have acredited 34 subjects. I consider myself as a person who is good at working in teams and I like to develop my knowledge everyday!"
 
     },
+
+
+    "studies": {
+
+        "secondary" : "Secondary title, Social studies oriented",
+
+        "english" : "Superior level of English. Later, First Certificate obtained",
+
+        "tcp" : "TCP Capacitation",
+        "chinese" : "Chinese Studies. Actually an HSK2/3. HSK1 obtained",
+
+        "college": "Systems Bachelor's in course. 34 subjects obtained",
+
+        "argentina" : "#YoProgramo. Program dictated by Argentina"
+    },
+
 
     "skills" : {
         "sql": "Queries management, subqueries, functions, errors management. +2 years of experience obtained in the University"
@@ -18,6 +44,33 @@
         ,
         "js": "Promises, functions, exceptions , JSON, REACT. This web logic is pure JS :). +2 years experience obtained in college and individually"
     
+    },
+
+    "projects":{
+
+        "webportfolio": "My Portfolio Web",
+
+        "musiquita": "Musiquita - Discord bot, listen to music!",
+
+        "mongo": "Data base and queries (pharmacy test)",
+
+        "spaceinvaders": "Space invaders gamelike",
+
+        "mcdonalds": "Mc'Donalds Web",
+        
+        "viewcode": "View full code",
+
+        "viewpage": "View webpage",
+                            
+        "invite": "Invite bot to your Discord"
+        
+    },
+
+    "footer":{
+
+        "direction": "direction",
+
+        "social":"social media"
     }
 
 

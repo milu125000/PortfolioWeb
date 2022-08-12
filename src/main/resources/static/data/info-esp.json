@@ -1,9 +1,36 @@
 
 {
+    "titles":{
+        
+        "portfolio" : "estudios",
+        
+        "skills" : "habilidades",
+
+        "projects": "proyectos"
+    },
+
+
     "introduction": {
+        
         "initialDesc": "Estudiante de Sistemas de 4to año en la UNLA, con 34 materias aprobadas. Una persona muy trabajadora y buena trabajando en equipo"
 
     },
+
+
+    "studies": {
+        "secondary" : "Título Secundario con orientación a Sociales",
+
+        "english" : "Nivel Superior de Inglés. Luego, se obtuvo el First Certificate",
+        "tcp" : "Capacitación para TCP",
+
+        "chinese" : "Estudio de Chino. HSK1 obtenido, nivel de HSK3",
+
+        "college": "Licenciatura en Sistemas. 34 materias aprobadas",
+
+        "argentina" : "Argentina Programa #YoProgramo"
+
+    },
+
 
     "skills" : {
         "sql": "Manejo de Tablas, ordenamientos, subconsultas, funciones, manejo de errores. Experiencia de +2 años obtenida en la Universidad"
@@ -17,5 +44,34 @@
         "git": "Manejo de GIT por bash y por Git Extensions. Experiencia de +3 años obtenida en la Universidad"
         ,
         "js": "Manejo de promesas, funciones, excepciones , JSON, REACT. Esta página está hecha con JS :). Experiencia de +2 años obtenida en la Universidad"
+    },
+
+    "projects":{
+
+        "webportfolio": "Mi Portfolio Web",
+
+        "musiquita": "Musiquita - Bot de Discord, reproductor de musica!",
+
+        "mongo": "Base de datos y consultas (emulando una farmacia)",
+
+        "spaceinvaders": "Juego Space Invaders",
+
+        "mcdonalds": "Web Mc'Donalds",
+
+        "viewcode": "Ver código completo",
+
+        "viewpage": "Ver página",
+                            
+        "invite": "Invitar el bot a tu discord"
+
+
+    },
+
+
+    "footer":{
+
+        "direction": "Direccion",
+
+        "social":"Redes Sociales"
     }
 }

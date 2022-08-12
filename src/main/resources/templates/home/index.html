@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- cache expirer -->
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Last-Modified" content="0">
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <!-- borrar -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -34,9 +40,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-portfolio" class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio" ></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-skills" class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills"></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a id="nav-projects" class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects"></a></li>
                         
                     </ul>
                 </div>
@@ -77,7 +83,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 id="title-portfolio" class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -89,39 +95,39 @@
                     <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
                         <!-- <div class="titulo secundario"> -->
                         <p class="bold">Nuestra Señora Monte Grande</p>
-                        <p class="lead">Título Secundario con orientación a Sociales</p>
+                        <p class="lead" id="secondary"></p>
                         <p class="italics">2011 - 2017</p>
                     <!-- </div> -->
                     <br>
                     <!-- <div class="ingles"> -->
                         <p class="bold">Instituto Cambridge</p>
-                        <p class="lead">Nivel Superior de Inglés</p>
+                        <p class="lead" id="english-studies"></p>
                         <p class="italics">2017 - 2017</p>
                     <!-- </div> -->
                     <br>
                     <!-- <div class="tcp"> -->
                         <p class="bold">IFPA</p>
-                        <p class="lead">Capacitación para TCP</p>
+                        <p class="lead" id="tcp"></p>
                         <p class="italics">2018 - 2018</p>
                     <!-- </div> -->
                     </div>
                     <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
                         <!-- <div class="chino"> -->
                             <p class="bold">CEA</p>
-                            <p class="lead">Estudio de Chino</p>
-                            <p class="italics">2018 - actualidad</p>
+                            <p class="lead" id="chinese-studies"></p>
+                            <p class="italics">2018 - 2024</p>
                         <!-- </div> -->
                         <br>
                         <!-- <div class="universidad"> -->
                             <p class="bold">UNLA</p>
-                            <p class="lead">Licenciatura en Sistemas. 31 materias aprobadas</p>
-                            <p class="italics">2019 - actualidad</p>
+                            <p class="lead" id="college"></p>
+                            <p class="italics">2019 - 2023</p>
                         <!-- </div> -->
                         <br>
                         <!-- <div class="argentina programa"> -->
                             <p class="bold">Ministerio de Producción</p>
-                            <p class="lead">Argentina Programa #YoProgramo</p>
-                            <p class="italics">2021 - actualidad</p>
+                            <p class="lead" id="argentina" ></p>
+                            <p class="italics">2021 - 2022</p>
                         <!-- </div> -->
         
                     </div>
@@ -136,7 +142,7 @@
         <section class="page-section portfolio" id="skills">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
+                <h2 id="title-skills" class="page-section-heading text-center text-uppercase text-secondary mb-0"></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -203,10 +209,10 @@
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="proyectos">
+        <section class="page-section bg-primary text-white mb-0" id="projects">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Proyectos</h2>
+                <h2 id="title-projects" class="page-section-heading text-center text-uppercase text-white"></h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -218,34 +224,30 @@
                     <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
                         <!-- <div proyecto Portfolio> -->
                         <p class="bold">Java, JS, Bootstrap, Spring, HTML, CSS</p>
-                        <p class="lead">Mi Portfolio Web</p>
-                        <a href="https://github.com/milu125000/milu125000.github.io" class="btn btn-primary" target="_blank">
+                        <p class="lead" id="web-portfolio"></p>
+                        <a href="https://github.com/milu125000/milu125000.github.io"  class="btn btn-primary" target="_blank">
                             <i class="fas fa-xmark fa-fw"></i>
-                            Ver código completo
                         </a>
                         <!-- </div> -->
                         <br><br><br><br>
 
                         <!-- <div proyecto PYGAME> -->
                         <p class="bold">Python , Pygame</p>
-                        <p class="lead">Juego Space Invaders</p>
-                        <a href="https://github.com/diegohernanibanez/juego-pygame" class="btn btn-primary" target="_blank">
+                        <p class="lead" id="space-invaders"></p>
+                        <a href="https://github.com/diegohernanibanez/juego-pygame"  class="btn btn-primary" target="_blank">
                             <i class="fas fa-xmark fa-fw"></i>
-                            Ver código completo
                         </a>
 
                         <br><br><br><br>
 
                         <!-- <div proyecto MCDonalds> -->
                             <p class="bold">JS, React</p>
-                            <p class="lead">Web Mc'Donalds</p>
-                            <a href="https://mc-donals-grupo-2.netlify.app" class="btn btn-primary" target="_blank">
+                            <p class="lead" id="mcdonalds"></p>
+                            <a tag="view-page"href="https://mc-donals-grupo-2.netlify.app" class="btn btn-primary" target="_blank">
                                 <i class="fas fa-xmark fa-fw"></i>
-                                Ver página
                             </a>
-                            <a href="https://github.com/camimisa/mcdonals-web" class="btn btn-primary" target="_blank">
+                            <a href="https://github.com/camimisa/mcdonals-web"  class="btn btn-primary" target="_blank">
                                 <i class="fas fa-xmark fa-fw"></i>
-                                Ver código fuente
                             </a>
                         
                     
@@ -254,10 +256,9 @@
                     <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
                         <!-- <div proyecto bot de musica> -->
                         <p class="bold">Python</p>
-                        <p class="lead">Musiquita - Bot de Discord, reproductor de musica!</p>
+                        <p class="lead" id="musiquita"></p>
                         <a href="https://discord.com/api/oauth2/authorize?client_id=814363090539905046&permissions=2251815936&scope=bot" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-xmark fa-fw"></i>
-                            Invitar el bot a tu discord
+                            <i  class="fas fa-xmark fa-fw"></i>
                         </a>
 
                         <!-- </div> -->
@@ -265,10 +266,9 @@
                         
                         <!-- <div proyecto PYGAME> -->
                         <p class="bold">MongoDB, Java, JSON</p>
-                        <p class="lead">Base de datos y consultas (emulando una farmacia)</p>
-                        <a href="https://github.com/camimisa/FarmaciaBD2" class="btn btn-primary" target="_blank">
+                        <p class="lead" id="mongo"></p>
+                        <a href="https://github.com/camimisa/FarmaciaBD2"  class="btn btn-primary" target="_blank">
                             <i class="fas fa-xmark fa-fw"></i>
-                            Ver código completo
                         </a>
                     </div>
                     
@@ -291,7 +291,7 @@
                     
                     <div class="col" style="padding-left:calc(var(--bs-gutter-x) * 0.5)">
                         
-                        <h4 class="text-uppercase mb-4">Direccion</h4>
+                        <h4 class="text-uppercase mb-4" id="dir"></h4>
                         <p class="lead mb-0">
                             Monte Grande 
                             <br />
@@ -300,7 +300,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col" style="padding-right:calc(var(--bs-gutter-x) * 2)">
-                        <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                        <h4 class="text-uppercase mb-4" id="social"></h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/milu125000"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/milagros-sassenus-71a75316a/"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>

@@ -25,17 +25,44 @@ function languageChange(elemento) {
             case("esp"):{
                 innerHTMLChangerWelcome(languageEsp);
                 innerHTMLChangerSkills(languageEsp);
+                innerHTMLChangerStudies(languageEsp);
+                innerHTMLChangerProjects(languageEsp);
+                innerHTMLChangerFooter(languageEsp);
+                innerHTMLChangerTitles(languageEsp);
+
                 break;
             }
             case("eng"):{
                 innerHTMLChangerWelcome(languageEng);
                 innerHTMLChangerSkills(languageEng);
+                innerHTMLChangerStudies(languageEng);
+                innerHTMLChangerProjects(languageEng);
+                innerHTMLChangerFooter(languageEng);
+                innerHTMLChangerTitles(languageEng);
+
                 break;
             }
         }
     }
     
 }
+
+function innerHTMLChangerTitles(languages){
+    languages.then(
+        data => {
+            document.getElementById('nav-portfolio').innerHTML = data.titles.portfolio;
+            document.getElementById('nav-skills').innerHTML = data.titles.skills;
+            document.getElementById('nav-projects').innerHTML = data.titles.projects;
+            document.getElementById('title-portfolio').innerHTML = data.titles.portfolio;
+            document.getElementById('title-skills').innerHTML = data.titles.skills;
+            document.getElementById('title-projects').innerHTML = data.titles.projects;
+           
+    });
+
+    
+}
+
+
 
 function innerHTMLChangerWelcome(languages){
     languages.then(
@@ -46,6 +73,43 @@ function innerHTMLChangerWelcome(languages){
 
     
 }
+
+function innerHTMLChangerStudies(languages){
+    languages.then(
+        data => {
+            document.getElementById('secondary').innerHTML = data.studies.secondary;
+            document.getElementById('english-studies').innerHTML = data.studies.english;
+            document.getElementById('tcp').innerHTML = data.studies.tcp;
+            document.getElementById('chinese-studies').innerHTML = data.studies.chinese;
+            document.getElementById('college').innerHTML = data.studies.college;
+            document.getElementById('argentina').innerHTML = data.studies.argentina;
+
+    });
+
+    
+}
+
+function innerHTMLChangerProjects(languages){
+    languages.then(
+        data => {
+            document.getElementById('web-portfolio').innerHTML = data.projects.webportfolio;
+            document.getElementById('musiquita').innerHTML = data.projects.musiquita;
+            document.getElementById('mongo').innerHTML = data.projects.mongo;
+            document.getElementById('space-invaders').innerHTML = data.projects.spaceinvaders;
+            document.getElementById('mcdonalds').innerHTML = data.projects.mcdonalds;
+            document.getElementsByClassName('btn btn-primary')[0].innerHTML = data.projects.viewcode;
+            document.getElementsByClassName('btn btn-primary')[1].innerHTML = data.projects.viewcode;
+            document.getElementsByClassName('btn btn-primary')[2].innerHTML = data.projects.viewpage;
+            document.getElementsByClassName('btn btn-primary')[3].innerHTML = data.projects.viewcode;
+            document.getElementsByClassName('btn btn-primary')[4].innerHTML = data.projects.invite;
+            document.getElementsByClassName('btn btn-primary')[5].innerHTML = data.projects.viewcode;
+            document.getElementsByClassName('btn btn-primary')[6].innerHTML = data.projects.viewcode;
+
+    });
+
+    
+}
+
 
 function innerHTMLChangerSkills(languages){
     languages.then(
@@ -61,6 +125,20 @@ function innerHTMLChangerSkills(languages){
 
     
 }
+
+
+function innerHTMLChangerFooter(languages){
+    languages.then(
+        data => {
+            document.getElementById('dir').innerHTML = data.footer.direction;
+            document.getElementById('social').innerHTML = data.footer.social;
+
+
+    });
+
+    
+}
+
 
 // function deleteInnerHTMLforLanguageChange(){
 //     document.getElementById('sql-info').innerHTML = "";
