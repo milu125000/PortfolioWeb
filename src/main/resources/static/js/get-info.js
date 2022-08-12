@@ -1,4 +1,5 @@
-var language = null;
+var language = "eng";
+var firstLoad = true;
 
 // fetching jsons
 
@@ -8,28 +9,27 @@ var languageEsp = fetch("data/info-esp.json")
 var languageEng = fetch("data/info-eng.json")
 .then(response => response.json());
 
-
-//first load
-if (language == null) {
-    language = "esp";
-    innerHTMLChanger(languageEsp);
+//first load 
+if(firstLoad){
+    firstLoad = false;
+    languageChange(document.getElementById('esp'));
 }
-
 
 // language changer
 
 function languageChange(elemento) {
-    console.log(elemento.id);
-    console.log(language);
-    if(language != elemento.id){
-        language = elemento.id;
+    var id = elemento.id;
+    if(language != id){
+        language = id;
         switch(language){
             case("esp"):{
-                innerHTMLChanger(languageEsp);
+                innerHTMLChangerWelcome(languageEsp);
+                innerHTMLChangerSkills(languageEsp);
                 break;
             }
             case("eng"):{
-                innerHTMLChanger(languageEng);
+                innerHTMLChangerWelcome(languageEng);
+                innerHTMLChangerSkills(languageEng);
                 break;
             }
         }
@@ -37,15 +37,25 @@ function languageChange(elemento) {
     
 }
 
-function innerHTMLChanger(languages){
+function innerHTMLChangerWelcome(languages){
     languages.then(
         data => {
-            document.getElementById('sql-info').innerHTML = data.sql;
-            document.getElementById('java-info').innerHTML = data.java;
-            document.getElementById('git-info').innerHTML = data.git;
-            document.getElementById('python-info').innerHTML = data.python;
-            document.getElementById('c-info').innerHTML = data.c;
-            document.getElementById('js-info').innerHTML = data.js;
+            document.getElementById('initDesc').innerHTML = data.introduction.initialDesc;
+
+    });
+
+    
+}
+
+function innerHTMLChangerSkills(languages){
+    languages.then(
+        data => {
+            document.getElementById('sql-info').innerHTML = data.skills.sql;
+            document.getElementById('java-info').innerHTML = data.skills.java;
+            document.getElementById('git-info').innerHTML = data.skills.git;
+            document.getElementById('python-info').innerHTML = data.skills.python;
+            document.getElementById('c-info').innerHTML = data.skills.c;
+            document.getElementById('js-info').innerHTML = data.skills.js;
 
     });
 

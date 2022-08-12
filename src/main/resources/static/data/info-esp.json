@@ -1,15 +1,21 @@
 
 {
-    "sql": "Manejo de Tablas, ordenamientos, subconsultas, funciones, manejo de errores. Experiencia de +2 años obtenida en la Universidad"
-    ,
-    "c": "Utilización de C los dos primeros años de Facultad. Manejo de listas, excepciones, recursividad, lector de archivos, busqueda burbuja/binaria. Experiencia de +3 años obtenida en la Universidad"
-    ,
-    "java": "Manejo de excepciones, POO, Hibernate, Maven, Spring Security, QR maker. Creación de páginas web en general. Experiencia de +3 años obtenida en la Universidad"
-    ,
-    "python": "Manejo de diccionarios, listas, teapot, threads. Experiencia de +2 años obtenida en la Universidad e individualmente"
-    ,
-    "git": "Manejo de GIT por bash y por Git Extensions. Experiencia de +3 años obtenida en la Universidad"
-    ,
-    "js": "Manejo de promesas, funciones, excepciones , JSON, REACT. Esta página está hecha con JS :). Experiencia de +2 años obtenida en la Universidad"
+    "introduction": {
+        "initialDesc": "Estudiante de Sistemas de 4to año en la UNLA, con 34 materias aprobadas. Una persona muy trabajadora y buena trabajando en equipo"
 
+    },
+
+    "skills" : {
+        "sql": "Manejo de Tablas, ordenamientos, subconsultas, funciones, manejo de errores. Experiencia de +2 años obtenida en la Universidad"
+        ,
+        "c": "Utilización de C los dos primeros años de Facultad. Manejo de listas, excepciones, recursividad, lector de archivos, busqueda burbuja/binaria. Experiencia de +3 años obtenida en la Universidad"
+        ,
+        "java": "Manejo de excepciones, POO, Hibernate, Maven, Spring Security, QR maker. Creación de páginas web en general. Experiencia de +3 años obtenida en la Universidad"
+        ,
+        "python": "Manejo de diccionarios, listas, teapot, threads. Experiencia de +2 años obtenida en la Universidad e individualmente"
+        ,
+        "git": "Manejo de GIT por bash y por Git Extensions. Experiencia de +3 años obtenida en la Universidad"
+        ,
+        "js": "Manejo de promesas, funciones, excepciones , JSON, REACT. Esta página está hecha con JS :). Experiencia de +2 años obtenida en la Universidad"
+    }
 }

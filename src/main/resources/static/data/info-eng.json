@@ -1,15 +1,26 @@
 
 {
-    "sql": "Queries management, subqueries, functions, errors management. +2 years of experience obtained in the University"
-    ,
-    "c": " C management since College started. Lists, exceptions, recursivity, archive reader, data research. +3 years of experience obtained in college"
-    ,
-    "java": "Exceptions management, POO, Hibernate, Maven, Spring Security, QR maker. Web pages management and creation. +3 years experience obtained in college"
-    ,
-    "python": "Dictionaries, lists, teapot, threads. +2 years experience obtained in college and individually"
-    ,
-    "git": "GIT management (bash and Github Desktop). +3 years experience obtained in college"
-    ,
-    "js": "Promises, functions, exceptions , JSON, REACT. This web logic is pure JS :). +2 years experience obtained in college and individually"
+    "introduction": {
+        "initialDesc": "Hi! I am a System Student, since 2019, and my objective is to get a Bachelor's Degree!. Until now, I have acredited 34 subjects. I consider myself as a person who is good at working in teams and I like to develop my knowledge everyday!"
+
+    },
+
+    "skills" : {
+        "sql": "Queries management, subqueries, functions, errors management. +2 years of experience obtained in the University"
+        ,
+        "c": " C management since College started. Lists, exceptions, recursivity, archive reader, data research. +3 years of experience obtained in college"
+        ,
+        "java": "Exceptions management, POO, Hibernate, Maven, Spring Security, QR maker. Web pages management and creation. +3 years experience obtained in college"
+        ,
+        "python": "Dictionaries, lists, teapot, threads. +2 years experience obtained in college and individually"
+        ,
+        "git": "GIT management (bash and Github Desktop). +3 years experience obtained in college"
+        ,
+        "js": "Promises, functions, exceptions , JSON, REACT. This web logic is pure JS :). +2 years experience obtained in college and individually"
+    
+    }
+
+
+
 
 }
