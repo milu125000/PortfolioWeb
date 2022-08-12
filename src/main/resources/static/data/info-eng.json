@@ -2,14 +2,14 @@
 {
     "sql": "Queries management, subqueries, functions, errors management. +2 years of experience obtained in the University"
     ,
-    "c": "Utilización de C los dos primeros años de Facultad. Manejo de listas, excepciones, recursividad, lector de archivos, busqueda burbuja/binaria. Experiencia de +3 años obtenida en la Universidad"
+    "c": " C management since College started. Lists, exceptions, recursivity, archive reader, data research. +3 years of experience obtained in college"
     ,
-    "java": "Manejo de excepciones, POO, Hibernate, Maven, Spring Security, QR maker. Creación de páginas web en general. Experiencia de +3 años obtenida en la Universidad"
+    "java": "Exceptions management, POO, Hibernate, Maven, Spring Security, QR maker. Web pages management and creation. +3 years experience obtained in college"
     ,
-    "python": "Manejo de diccionarios, listas, teapot, threads. Experiencia de +2 años obtenida en la Universidad e individualmente"
+    "python": "Dictionaries, lists, teapot, threads. +2 years experience obtained in college and individually"
     ,
-    "git": "Manejo de GIT por bash y por Git Extensions. Experiencia de +3 años obtenida en la Universidad"
+    "git": "GIT management (bash and Github Desktop). +3 years experience obtained in college"
     ,
-    "js": "Manejo de promesas, funciones, excepciones , JSON. Esta página está hecha con JS :). Experiencia de +2 años obtenida en la Universidad"
+    "js": "Promises, functions, exceptions , JSON, REACT. This web logic is pure JS :). +2 years experience obtained in college and individually"
 
 }

@@ -1,15 +1,22 @@
 var language = null;
 
+// fetching jsons
+
 var languageEsp = fetch("data/info-esp.json")
 .then(response => response.json());
 
 var languageEng = fetch("data/info-eng.json")
 .then(response => response.json());
 
+
+//first load
 if (language == null) {
     language = "esp";
     innerHTMLChanger(languageEsp);
 }
+
+
+// language changer
 
 function languageChange(elemento) {
     console.log(elemento.id);
